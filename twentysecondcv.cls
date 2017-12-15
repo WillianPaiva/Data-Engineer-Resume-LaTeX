@@ -20,6 +20,7 @@
 \RequirePackage{parskip}
 
 \usepackage{enumitem}
+\usepackage{fontawesome}
 \setlist[itemize]{leftmargin=*}
 
 \RequirePackage[hidelinks]{hyperref}
@@ -165,7 +166,7 @@
 
   %------------------------------------------------
 
-  \begin{textblock}{6}(0.5, 0.2)
+  \begin{textblock}{6}(0.3, 0.2)
 
     %------------------------------------------------
     
@@ -178,59 +179,72 @@
 
     %------------------------------------------------
     
-        \vspace{5mm}
+        \vspace{3mm}
     \renewcommand{\arraystretch}{1.6}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
         
           \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
-              {\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
+              {\href{\cvlinkedin}{\includegraphics[scale=0.07]{img/home.png}}}
               \end{array}
-              $} & \href{\cvlinkedin}{\hspace{16mm}/in/hsgadgil} \\
+              $} & \cvlinkedin \\
             }
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
             {$
               \begin{array}{l}
-              \includegraphics[scale=0.1]{img/tel.png}
+              \includegraphics[scale=0.07]{img/pho.png}
               \end{array}
               $} 
             & \cvnumberphone\\}
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
-              {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
+              {\href{\cvsite}{\includegraphics[scale=0.07]{img/web.png}}}
               \end{array}
               $} 
-            & \cvsite\\}
+      & \href{http://www.vervalem.com}{\cvsite}\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              {\href{mailto:\cvmail}{\includegraphics[scale=0.05]{img/email.png}}}
+              {\href{mailto:\cvmail}{\includegraphics[scale=0.07]{img/at.png}}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail}}
+
     \end{tabular}
-
+    {$
+      \begin{array}{l}
+        \hspace{0.5mm}{\includegraphics[scale=0.10]{img/git.png}}
+      \end{array}
+      $}
+    \hspace{5mm}
+    {$
+      \begin{array}{l}
+        \hspace{-2mm}{\includegraphics[scale=0.09]{img/linked.png}}
+      \end{array}
+      $}\\ 
     %------------------------------------------------
-        \vspace{3mm}
-        \profilesection{Skills}{4cm}
-
-    	\skills
+        \vspace{-1mm}
+        \profilesection{Skills}{4cm} 
+        {$
+              \begin{array}{l}
+              \hspace{-1.25mm}{\includegraphics[scale=0.45]{img/chart_2.png}}
+              \end{array}
+        $}   
         
         %------------------------------------------------
-        \vspace{3mm}
-        \profilesection{Interests}{3cm} 
+        \vspace{-4mm}
+        \profilesection{Languages}{2.4cm}
         
         \interests
         
-        \vspace{3mm}
-        \profilesection{Languages}{2.4cm} 
-        {$
-              \begin{array}{l}
-              \hspace{-2mm}{\includegraphics[scale=0.45]{img/languages_muted.png}}
-              \end{array}
-        $}   
+    %------------------------------------------------
+        \vspace{0mm}
+        \profilesection{Interests}{3cm} 
+
+    	\skills
+
   \end{textblock}
 }
 
