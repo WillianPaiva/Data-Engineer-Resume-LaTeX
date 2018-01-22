@@ -3,7 +3,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
 %----------------------------------------------------------------------------------------
-%	 REQUIRED PACKAGES
+%  REQUIRED PACKAGES
 %-----------------------------------------------------------------------	-----------------
 
 \RequirePackage[quiet]{fontspec}
@@ -51,7 +51,7 @@
 \fi
 
 %----------------------------------------------------------------------------------------
-%	 COLOURS
+%  COLOURS
 %----------------------------------------------------------------------------------------
 
 \definecolor{white}{RGB}{255,255,255}
@@ -99,7 +99,7 @@
 \colorlet{headercolor}{gray}
 
 %----------------------------------------------------------------------------------------
-%	 MISC CONFIGURATIONS
+%  MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 % \renewcommand{\bfseries}{\color{black}} % Make \textbf produce coloured text instead
@@ -109,12 +109,12 @@
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
 % --------------------------------------------------------------------------------------
-% 	FONTS
+%   FONTS
 %-------------------------------------------------------------------------------------
 \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf}
 
 %----------------------------------------------------------------------------------------
-%	 SIDEBAR DEFINITIONS
+%  SIDEBAR DEFINITIONS
 %----------------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm} % Left margin
@@ -133,7 +133,7 @@
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+% \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -143,16 +143,16 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\interests[1]{ 
-	\renewcommand{\interests}{
-		\begin{tikzpicture}
-			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\node [above right] at (0,\i+0.4) {\x};
-			}
-		\end{tikzpicture}
-	}
+\newcommand\interests[1]{
+  \renewcommand{\interests}{
+    \begin{tikzpicture}
+      \foreach [count=\i] \x/\y in {#1}{
+        \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+        \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+        \node [above right] at (0,\i+0.4) {\x};
+      }
+    \end{tikzpicture}
+  }
 }
 
 %----------------------------------------------------------------------------------------
@@ -169,20 +169,20 @@
   \begin{textblock}{6}(0.3, 0.2)
 
     %------------------------------------------------
-    
+
         \vspace{4mm}
     {\Huge\color{pblue}\cvname}
 
     %------------------------------------------------
-    
+
     {\Large\color{black!80}\cvjobtitle}
 
     %------------------------------------------------
-    
+
         \vspace{3mm}
     \renewcommand{\arraystretch}{1.6}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
-        
+
           \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
@@ -195,21 +195,21 @@
               \begin{array}{l}
               \includegraphics[scale=0.07]{img/pho.png}
               \end{array}
-              $} 
+              $}
             & \cvnumberphone\\}
-      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
-            {$
-              \begin{array}{l}
-              {\href{\cvsite}{\includegraphics[scale=0.07]{img/web.png}}}
-              \end{array}
-              $} 
-      & \href{http://www.vervalem.com}{\cvsite}\\}
+      % \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+      %       {$
+      %         \begin{array}{l}
+      %         {\href{\cvsite}{\includegraphics[scale=0.07]{img/web.png}}}
+      %         \end{array}
+      %         $}
+      % & \href{http://www.vervalem.com}{\cvsite}\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
               {\href{mailto:\cvmail}{\includegraphics[scale=0.07]{img/at.png}}}
               \end{array}
-              $} 
+              $}
             & \href{mailto:\cvmail}{\cvmail}}
 
     \end{tabular}
@@ -223,122 +223,122 @@
       \begin{array}{l}
         \hspace{-2mm}{\includegraphics[scale=0.09]{img/linked.png}}
       \end{array}
-      $}\\ 
+      $}\\
     %------------------------------------------------
         \vspace{-1mm}
-        \profilesection{Skills}{4cm} 
+        \profilesection{Skills}{4cm}
         {$
               \begin{array}{l}
               \hspace{-1.25mm}{\includegraphics[scale=0.45]{img/chart_2.png}}
               \end{array}
-        $}   
-        
+        $}
+
         %------------------------------------------------
         \vspace{-4mm}
         \profilesection{Languages}{2.4cm}
-        
+
         \interests
-        
+
     %------------------------------------------------
         \vspace{0mm}
-        \profilesection{Interests}{3cm} 
+        \profilesection{Interests}{3cm}
 
-    	\skills
+      \skills
 
   \end{textblock}
 }
 
 
 %----------------------------------------------------------------------------------------
-%	 COLOURED SECTION TITLE BOX
+%  COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
+  \tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
 \def\@sectioncolor#1#2#3{%
-	{%
-		\color{pblue} #1#2#3%
-	}%
+  {%
+    \color{pblue} #1#2#3%
+  }%
 }
 
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
-	{%
-		\LARGE\headingfont\color{headercolor}%
-		\@sectioncolor #1%
-	}
+  {%
+    \LARGE\headingfont\color{headercolor}%
+    \@sectioncolor #1%
+  }
   \par\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[1]{
-	\par\vspace{.5\parskip}{%
-		\Large\headingfont\color{headercolor} #1%
-	}
-	\par\vspace{.25\parskip}%
+  \par\vspace{.5\parskip}{%
+    \Large\headingfont\color{headercolor} #1%
+  }
+  \par\vspace{.25\parskip}%
 }
 
 \pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	 LONG LIST ENVIRONMENT
+%  LONG LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the long list
 \newenvironment{twenty}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 % \newcommand{\twentyitem}[5]{%
-% 	#1&\parbox[t]{0.83\textwidth}{%
-% 		\textbf{#2}% 
-% 		\hfill%
-% 		{\footnotesize#3}\\%
+%   #1&\parbox[t]{0.83\textwidth}{%
+%     \textbf{#2}%
+%     \hfill%
+%     {\footnotesize#3}\\%
 %         \ifblank{#4}{}{#4 \\}
-% 		#5\vspace{\parsep}%
-% 	}\\
+%     #5\vspace{\parsep}%
+%   }\\
 % }
 
 \newcommand{\twentyitem}[6]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#3}% 
-		\hfill%
-		{\footnotesize#4}%
+  #1&\parbox[t]{0.83\textwidth}{%
+    \textbf{#3}%
+    \hfill%
+    {\footnotesize#4}%
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
-		\ifblank{#5}{}{#5 \\}
-		#6\vspace{\parsep}%
-	}\\
+    \ifblank{#5}{}{#5 \\}
+    #6\vspace{\parsep}%
+  }\\
 }
 
 %----------------------------------------------------------------------------------------
-%	 SMALL LIST ENVIRONMENT
+%  SMALL LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the small list
 \newenvironment{twentyshort}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 \newcommand{\twentyitemshort}[2]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		#2%
-	}\\
+  #1&\parbox[t]{0.83\textwidth}{%
+    #2%
+  }\\
 }
 
 %----------------------------------------------------------------------------------------
-%	 MARGINS AND LINKS
+%  MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[left=7.6cm,top=0.05cm,right=1cm,bottom=0.05cm,nohead,nofoot]{geometry}
@@ -365,4 +365,3 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
-
