@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Arch Linux) (preloaded format=xelatex 2018.1.22)  22 JAN 2018 21:02
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Arch Linux) (preloaded format=xelatex 2018.5.23)  10 JUN 2018 19:21
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **template.tex
 (./template.tex
 LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./twentysecondcv.cls
 Document Class: twentysecondcv 2015/02/28 CV class
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -28,10 +28,10 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2017/11/14 L3 programming layer (loader) 
+Package: expl3 2018/02/21 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2017/11/14 L3 programming layer (code)
+Package: expl3 2018/02/21 L3 programming layer (code)
 \c_max_int=\count87
 \l_tmpa_int=\count88
 \l_tmpb_int=\count89
@@ -127,7 +127,7 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \l__regex_min_submatch_int=\count161
 \l__regex_submatch_int=\count162
 \l__regex_zeroth_submatch_int=\count163
-\g__debug_trace_regex_int=\count164
+\g__regex_trace_regex_int=\count164
 \c_empty_box=\box26
 \l_tmpa_box=\box27
 \l_tmpb_box=\box28
@@ -174,7 +174,7 @@ File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
 \g__driver_image_int=\count165
 \l__driver_tmp_box=\box41
 ))
-Package: xparse 2017/11/14 L3 Experimental document command parser
+Package: xparse 2018/02/21 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count166
 \g__xparse_grabber_int=\count167
 \l__xparse_m_args_int=\count168
@@ -831,7 +831,7 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \JustifyingParindent=\skip62
 )
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count267
 )
 (/usr/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
@@ -855,25 +855,35 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box55
 \enitdp@description=\count268
 )
-(/usr/share/texmf/tex/latex/fontawesome/fontawesome.sty
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 
-(/usr/share/texmf/tex/latex/fontawesome/fontawesomesymbols-generic.tex)
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex)
 Requested font "FontAwesome" at 10.0pt
- -> ï¿¾"ï¿¿ï¿¿»^^DV
+ -> Pï¿¾˜wï¿¿†ï¿¾­U
 Requested font "FontAwesome/OT" at 10.0pt
- -> ï¿¾ ï¿¾µï¿¿’ï¿¿»^^DV
+ -> 
 \g__fontspec_family_FontAwesome_int=\count269
+Requested font "FontAwesome/OT" at 10.0pt
+ -> 
 Requested font "FontAwesome/BI/OT" at 10.0pt
- -> pï¿¾–ï¿¿—ï¿¿»^^DV
+ -> 
+Requested font "FontAwesome/OT" at 10.0pt
+ -> 
 Requested font "FontAwesome/B/OT" at 10.0pt
- -> pï¿¾–ï¿¿—ï¿¿»^^DV
+ -> 
+Requested font "FontAwesome/OT" at 10.0pt
+ -> 
 Requested font "FontAwesome/I/OT" at 10.0pt
- -> pï¿¾–ï¿¿—ï¿¿»^^DV
+ -> 
+Requested font "FontAwesome/OT" at 10.0pt
+ -> 
+Requested font "FontAwesome/OT" at 10.0pt
+ -> 
 
-(/usr/share/texmf/tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex))
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex))
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -896,7 +906,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
@@ -929,54 +939,53 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count271
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count272
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4498.
-Package hyperref Info: Link nesting OFF on input line 4503.
-Package hyperref Info: Hyper index ON on input line 4506.
-Package hyperref Info: Plain pages OFF on input line 4513.
-Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4751.
+Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count273
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5104.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen195
 Requested font "pzdr" at 0.00002pt
  -> /usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
 \Fld@menulength=\count274
 \Field@Width=\dimen196
 \Fld@charsize=\dimen197
-Package hyperref Info: Hyper figures OFF on input line 6358.
-Package hyperref Info: Link nesting OFF on input line 6363.
-Package hyperref Info: Hyper index ON on input line 6366.
-Package hyperref Info: backreferencing OFF on input line 6373.
-Package hyperref Info: Link coloring OFF on input line 6378.
-Package hyperref Info: Link coloring with OCG OFF on input line 6383.
-Package hyperref Info: PDF/A mode OFF on input line 6388.
-LaTeX Info: Redefining \ref on input line 6428.
-LaTeX Info: Redefining \pageref on input line 6432.
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count275
 \c@Item=\count276
 \c@Hfootnote=\count277
 )
-
-Package hyperref Message: Driver (autodetected): hxetex.
+Package hyperref Info: Driver (autodetected): hxetex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2017/03/14 v6.85a Hyperref driver for XeTeX
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 )
 (/usr/share/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
@@ -1335,57 +1344,53 @@ x-text;" at 17.28pt
 Requested font "[fonts/segoeuib.ttf]/OT:script=latn;language=DFLT;" at 17.28pt
  -> ./fonts/segoeuib.ttf
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 88.
+(Font)              scaled to size 10.0pt on input line 89.
 Requested font "[ClearSans-Bold.ttf]/OT:script=latn;language=DFLT;mapping=tex-t
 ext;" at 10.0pt
  -> /usr/share/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-Bold.ttf
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/bx/it' will be
-(Font)              scaled to size 10.0pt on input line 88.
+(Font)              scaled to size 10.0pt on input line 89.
 Requested font "[ClearSans-BoldItalic.ttf]/OT:script=latn;language=DFLT;mapping
 =tex-text;" at 10.0pt
  -> /usr/share/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-BoldItalic.t
 tf
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 98.
+(Font)              scaled to size 10.0pt on input line 99.
 Requested font "[ClearSans-Italic.ttf]/OT:script=latn;language=DFLT;mapping=tex
 -text;" at 10.0pt
  -> /usr/share/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-Italic.ttf
 
-Overfull \hbox (10.30815pt too wide) in alignment at lines 78--126
-[] []
+Underfull \hbox (badness 1337) in paragraph at lines 99--99
+\TU/ClearSans(0)/m/it/10 Generative Adversarial Neural Networks \TU/ClearSans(0
+)/m/n/10 and \TU/ClearSans(0)/m/it/10 Deep Reinforcement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 78--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--176
+Underfull \hbox (badness 10000) in paragraph at lines 151--201
 
  []
 
 [1
 
-] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
  (./template.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 190.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 190.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 215.
  ) 
 Here is how much of TeX's memory you used:
- 32801 strings out of 493010
- 645629 string characters out of 6140134
- 760453 words of memory out of 5000000
- 36354 multiletter control sequences out of 15000+600000
+ 32999 strings out of 493007
+ 650079 string characters out of 6140075
+ 764456 words of memory out of 5000000
+ 36555 multiletter control sequences out of 15000+600000
  530840 words of font info for 49 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,19n,75p,10429b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template.pdf (2 pages).
+Output written on template.pdf (1 page).

@@ -118,7 +118,7 @@
 %----------------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm} % Left margin
-\setlength{\TPVertModule}{1cm} % Top margin
+\setlength{\TPVertModule}{0cm} % Top margin
 
 \newlength\imagewidth
 \newlength\imagescale
@@ -266,19 +266,19 @@
 
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{0cm}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace{0cm}
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}{%
+  \par\vspace{0cm}{%
     \Large\headingfont\color{headercolor} #1%
   }
-  \par\vspace{.25\parskip}%
+  \par\vspace{0cm}%
 }
 
 \pagestyle{empty}
@@ -302,7 +302,7 @@
 %     \hfill%
 %     {\footnotesize#3}\\%
 %         \ifblank{#4}{}{#4 \\}
-%     #5\vspace{\parsep}%
+%     #5\vspace{0cm}%
 %   }\\
 % }
 
@@ -314,7 +314,7 @@
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
     \ifblank{#5}{}{#5 \\}
-    #6\vspace{\parsep}%
+    #6\vspace{0cm}%
   }\\
 }
 
