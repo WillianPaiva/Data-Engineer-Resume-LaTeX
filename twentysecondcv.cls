@@ -229,7 +229,7 @@
         \profilesection{Skills}{4cm}
         {$
               \begin{array}{l}
-              \hspace{-1.25mm}{\includegraphics[scale=0.45]{img/chart_2.png}}
+              \hspace{-1.25mm}{\includegraphics[scale=0.35]{img/chart_2.png}}
               \end{array}
         $}
 
